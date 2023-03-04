@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Defi Pirates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-page relative overflow-hidden">
+        <img src="./assets/side line.png" alt="side-line" class="side-line w-3 absolute left-0 bg-gray-800  z-1">
+        <img src="./assets/side line.png" alt="side-line" class="side-line w-3 absolute right-0 bg-gray-800  z-1">
+
+    <!-- Navbar -->
+    <nav class="relative bg-gray-800 flex items-center justify-between px-12 py-4 text-white z-2 shadow-xl">
+        <div class="font-bold text-center mx-auto md:mx-0 lg:mx-0">Defi Pirates</div>
+        <div class="hidden md:block">
+            <ul class="hidden md:flex items-center gap-6">
+                <li><a href="https://opensea.io/collection/defi-pirates-3">OpenSea</a></li>
+                <li><a href="https://x2y2.io/collection/defi-pirates-3/items">X2x2</a></li>
+                <li><a href="https://app.uniswap.org/#/nfts/collection/0x59495c3a15200d2f1a4e509b17954f5bca85748b">Gem</a></li>
+                <li><a href="https://www.gem.xyz/collection/0x59495C3a15200d2f1a4E509B17954f5BCA85748B/">Uniswap</a></li>
+                <li><a href="https://twitter.com/defipiratesnft">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </a></li>
+                <li ><a href="https://discord.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                    <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                  </svg></a></li>
+                <!-- <li id="connect-button" class="px-6 py-2 rounded-lg font-bold text-white border border-1 cursor-pointer"><span id="wallet-address">Connect Wallet</></li> -->
+            </ul>
+        </div>
+        <!-- mob nav -->
+        <div id="menu-icon" class="block transition-all duration-200 ease-in-out md:hidden absolute left-0 px-4 cursor-pointer w-fit ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </div>
+        <!-- close nav -->
+        <div id="close-nav" class="hidden transition-all duration-200 ease-in-out md:hidden absolute left-0 px-4 cursor-pointer w-fit ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+              </svg>
+        </div>
+        <div id="mob-nav" class="hidden fixed top-0 left-0 w-1/2 md:hidden h-screen  bg-gray-800 ">
+            <ul class="flex flex-col justify-center items-center h-full gap-9">
+                <li><a href="https://opensea.io/collection/defi-pirates-3">OpenSea</a></li>
+                <li><a href="https://x2y2.io/collection/defi-pirates-3/items">X2x2</a></li>
+                <li><a href="https://app.uniswap.org/#/nfts/collection/0x59495c3a15200d2f1a4e509b17954f5bca85748b">Gem</a></li>
+                <li><a href="https://www.gem.xyz/collection/0x59495C3a15200d2f1a4E509B17954f5BCA85748B/">Uniswap</a></li>
+                <li><a href="https://twitter.com/defipiratesnft">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </a></li>
+                <li ><a href="https://discord.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                    <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                  </svg></a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="mint-content relative overflow-hidden">
+        <!-- "clip-path: polygon(20% 0%, 95% 0px, 100% 20%, 100% 100%, 80% 100%, 5% 100%, 0% 80%, 0px 0px);" -->
+    <div class="flex items-center justify-center w-full my-12">
+        <div class="minting-details-box w-11/12 lg:w-1/2 md:2/3 h-fit text-sm md:text-xl bg-gray-800" >
+            <div class="space-y-6">
+                <h1 class="text-2xl font-bold">Minting Live</h1>
+                <div class="details grid grid-cols-2  gap-3">
+                    <div>
+                        <span class="font-bold">Price: </span>
+                        <span>0.002 ETH</span>
+                    </div>
+                    <div>
+                        <span class="font-bold">Supply: </span>
+                        <span>10000</span>
+                    </div>
+                    <div>
+                        <span class="font-bold">Max Per Mint: </span>
+                        <span>10</span>
+                    </div>
+                    <div>
+                        <span class="font-bold">Max Wallet Mint: </span>
+                        <span>10</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-bold">Description: </span> 
+                    <span>xxdv tr5uu 7788 jii99</span>
+                </div>
+                <div class="mint bg-gray-800 >
+
+                <div data-id="a280ad2" data-element_type="widget" data-widget_type="html.default">
+                    <div >
+                        <script type="module"
+                            src="https://cdn.nft-generator.art/js-sdk/v1.4.1/nft-art-generator-sdk/nft-art-generator-sdk.esm.js"></script>
+                        <script nomodule
+                            src="https://cdn.nft-generator.art/js-sdk/v1.4.1/nft-art-generator-sdk/nft-art-generator-sdk.js"></script>
+                        <meta name="nft-art-contract-abi"
+                            content="W3sibmFtZSI6ImFmZmlsaWF0ZXNPZiIsInR5cGUiOiJmdW5jdGlvbiIsImlucHV0cyI6W3sibmFtZSI6Im93bmVyIiwidHlwZSI6ImFkZHJlc3MiLCJpbnRlcm5hbFR5cGUiOiJhZGRyZXNzIn1dLCJvdXRwdXRzIjpbeyJuYW1lIjoiIiwidHlwZSI6InVpbnQyNTYiLCJpbnRlcm5hbFR5cGUiOiJ1aW50MjU2In1dLCJzdGF0ZU11dGFiaWxpdHkiOiJ2aWV3In0seyJuYW1lIjoiYmFsYW5jZU9mIiwidHlwZSI6ImZ1bmN0aW9uIiwiaW5wdXRzIjpbeyJuYW1lIjoib3duZXIiLCJ0eXBlIjoiYWRkcmVzcyIsImludGVybmFsVHlwZSI6ImFkZHJlc3MifV0sIm91dHB1dHMiOlt7Im5hbWUiOiIiLCJ0eXBlIjoidWludDI1NiIsImludGVybmFsVHlwZSI6InVpbnQyNTYifV0sInN0YXRlTXV0YWJpbGl0eSI6InZpZXcifSx7Im5hbWUiOiJjb3N0IiwidHlwZSI6ImZ1bmN0aW9uIiwiaW5wdXRzIjpbXSwib3V0cHV0cyI6W3sibmFtZSI6IiIsInR5cGUiOiJ1aW50MjU2IiwiaW50ZXJuYWxUeXBlIjoidWludDI1NiJ9XSwic3RhdGVNdXRhYmlsaXR5IjoidmlldyJ9LHsibmFtZSI6Im1heEZyZWVNaW50IiwidHlwZSI6ImZ1bmN0aW9uIiwiaW5wdXRzIjpbXSwib3V0cHV0cyI6W3sibmFtZSI6IiIsInR5cGUiOiJ1aW50MzIiLCJpbnRlcm5hbFR5cGUiOiJ1aW50MzIifV0sInN0YXRlTXV0YWJpbGl0eSI6InZpZXcifSx7Im5hbWUiOiJtYXhQZXJNaW50IiwidHlwZSI6ImZ1bmN0aW9uIiwiaW5wdXRzIjpbXSwib3V0cHV0cyI6W3sibmFtZSI6IiIsInR5cGUiOiJ1aW50MzIiLCJpbnRlcm5hbFR5cGUiOiJ1aW50MzIifV0sInN0YXRlTXV0YWJpbGl0eSI6InZpZXcifSx7Im5hbWUiOiJtYXhQZXJXYWxsZXQiLCJ0eXBlIjoiZnVuY3Rpb24iLCJpbnB1dHMiOltdLCJvdXRwdXRzIjpbeyJuYW1lIjoiIiwidHlwZSI6InVpbnQzMiIsImludGVybmFsVHlwZSI6InVpbnQzMiJ9XSwic3RhdGVNdXRhYmlsaXR5IjoidmlldyJ9LHsibmFtZSI6Im1pbnQiLCJ0eXBlIjoiZnVuY3Rpb24iLCJpbnB1dHMiOlt7Im5hbWUiOiJjb3VudCIsInR5cGUiOiJ1aW50MjU2IiwiaW50ZXJuYWxUeXBlIjoidWludDI1NiJ9XSwib3V0cHV0cyI6W10sInN0YXRlTXV0YWJpbGl0eSI6InBheWFibGUifSx7Im5hbWUiOiJtaW50Q29zdE9mT3duZXIiLCJ0eXBlIjoiZnVuY3Rpb24iLCJpbnB1dHMiOlt7Im5hbWUiOiJfYWRkcmVzcyIsInR5cGUiOiJhZGRyZXNzIiwiaW50ZXJuYWxUeXBlIjoiYWRkcmVzcyJ9LHsibmFtZSI6Il9jb3VudCIsInR5cGUiOiJ1aW50MjU2IiwiaW50ZXJuYWxUeXBlIjoidWludDI1NiJ9XSwib3V0cHV0cyI6W3sibmFtZSI6IiIsInR5cGUiOiJ1aW50MjU2IiwiaW50ZXJuYWxUeXBlIjoidWludDI1NiJ9XSwic3RhdGVNdXRhYmlsaXR5IjoidmlldyJ9LHsibmFtZSI6Im5hbWUiLCJ0eXBlIjoiZnVuY3Rpb24iLCJpbnB1dHMiOltdLCJvdXRwdXRzIjpbeyJuYW1lIjoiIiwidHlwZSI6InN0cmluZyIsImludGVybmFsVHlwZSI6InN0cmluZyJ9XSwic3RhdGVNdXRhYmlsaXR5IjoidmlldyJ9LHsibmFtZSI6Im9wZW4iLCJ0eXBlIjoiZnVuY3Rpb24iLCJpbnB1dHMiOltdLCJvdXRwdXRzIjpbeyJuYW1lIjoiIiwidHlwZSI6ImJvb2wiLCJpbnRlcm5hbFR5cGUiOiJib29sIn1dLCJzdGF0ZU11dGFiaWxpdHkiOiJ2aWV3In0seyJuYW1lIjoib3duZXIiLCJ0eXBlIjoiZnVuY3Rpb24iLCJpbnB1dHMiOltdLCJvdXRwdXRzIjpbeyJuYW1lIjoiIiwidHlwZSI6ImFkZHJlc3MiLCJpbnRlcm5hbFR5cGUiOiJhZGRyZXNzIn1dLCJzdGF0ZU11dGFiaWxpdHkiOiJ2aWV3In0seyJuYW1lIjoicHJlc2FsZU1pbnQiLCJ0eXBlIjoiZnVuY3Rpb24iLCJpbnB1dHMiOlt7Im5hbWUiOiJjb3VudCIsInR5cGUiOiJ1aW50MzIiLCJpbnRlcm5hbFR5cGUiOiJ1aW50MzIifSx7Im5hbWUiOiJwcm9vZiIsInR5cGUiOiJieXRlczMyW10iLCJpbnRlcm5hbFR5cGUiOiJieXRlczMyW10ifV0sIm91dHB1dHMiOltdLCJzdGF0ZU11dGFiaWxpdHkiOiJwYXlhYmxlIn0seyJuYW1lIjoicHJlc2FsZU9wZW4iLCJ0eXBlIjoiZnVuY3Rpb24iLCJpbnB1dHMiOltdLCJvdXRwdXRzIjpbeyJuYW1lIjoiIiwidHlwZSI6ImJvb2wiLCJpbnRlcm5hbFR5cGUiOiJib29sIn1dLCJzdGF0ZU11dGFiaWxpdHkiOiJ2aWV3In0seyJuYW1lIjoicmVmZXJyYWxDYXAiLCJ0eXBlIjoiZnVuY3Rpb24iLCJpbnB1dHMiOltdLCJvdXRwdXRzIjpbeyJuYW1lIjoiIiwidHlwZSI6InVpbnQyNTYiLCJpbnRlcm5hbFR5cGUiOiJ1aW50MjU2In1dLCJzdGF0ZU11dGFiaWxpdHkiOiJ2aWV3In0seyJuYW1lIjoicmVmZXJyYWxNaW50IiwidHlwZSI6ImZ1bmN0aW9uIiwiaW5wdXRzIjpbeyJuYW1lIjoiY291bnQiLCJ0eXBlIjoidWludDMyIiwiaW50ZXJuYWxUeXBlIjoidWludDMyIn0seyJuYW1lIjoicmVmZXJyZXIiLCJ0eXBlIjoiYWRkcmVzcyIsImludGVybmFsVHlwZSI6ImFkZHJlc3MifV0sIm91dHB1dHMiOltdLCJzdGF0ZU11dGFiaWxpdHkiOiJwYXlhYmxlIn0seyJuYW1lIjoicmVmZXJyYWxPcGVuIiwidHlwZSI6ImZ1bmN0aW9uIiwiaW5wdXRzIjpbXSwib3V0cHV0cyI6W3sibmFtZSI6IiIsInR5cGUiOiJib29sIiwiaW50ZXJuYWxUeXBlIjoiYm9vbCJ9XSwic3RhdGVNdXRhYmlsaXR5IjoidmlldyJ9LHsibmFtZSI6InJldmVhbGVkIiwidHlwZSI6ImZ1bmN0aW9uIiwiaW5wdXRzIjpbXSwib3V0cHV0cyI6W3sibmFtZSI6IiIsInR5cGUiOiJib29sIiwiaW50ZXJuYWxUeXBlIjoiYm9vbCJ9XSwic3RhdGVNdXRhYmlsaXR5IjoidmlldyJ9LHsibmFtZSI6InN1cHBseSIsInR5cGUiOiJmdW5jdGlvbiIsImlucHV0cyI6W10sIm91dHB1dHMiOlt7Im5hbWUiOiIiLCJ0eXBlIjoidWludDI1NiIsImludGVybmFsVHlwZSI6InVpbnQyNTYifV0sInN0YXRlTXV0YWJpbGl0eSI6InZpZXcifSx7Im5hbWUiOiJ0b3RhbFN1cHBseSIsInR5cGUiOiJmdW5jdGlvbiIsImlucHV0cyI6W10sIm91dHB1dHMiOlt7Im5hbWUiOiIiLCJ0eXBlIjoidWludDI1NiIsImludGVybmFsVHlwZSI6InVpbnQyNTYifV0sInN0YXRlTXV0YWJpbGl0eSI6InZpZXcifV0=">
+                        </meta>
+                        <style>
+                            .nft-art-gen-section{
+                                /* background: #000; */
+                                border: #121515 1px solid;
+                                padding: 10px;
+                                border-radius: 10px;
+                                width: fit-content;
+                                margin: 0 auto;
+
+                            }
+                            .nft-art-gen-section button {
+                                text-align: center;
+                                background: #2a2a2a00;
+                                color: #F3F0E9;
+                                font-size: 18px;
+                                border-radius: 10px;
+                                padding-inline: 26px;
+                                padding-block: 12px;
+                                line-height: 100%;
+                                height: auto;
+                                border: 5px solid #000000;
+                                border: none;
+                            }
+
+                            .nft-art-gen-section select {
+                                background: #121515;
+                                color: #F3F0E9;
+                                font-size: 18px;
+                                border-radius: 10px;
+                                padding-inline: 26px;
+                                padding-block: 8px;
+                                line-height: 100%;
+                                height: auto;
+                                border: 0 0 0 1px solid #b2b2b2;
+                                outline: none;
+                                /* border: none; */
+                            }
+                        </style>
+                        <meta name="nft-art-contract-presale" content="W10=">
+
+                        </meta>
+
+                        <nftart-mint-button class="bg-orange-400" address="0x59495C3a15200d2f1a4E509B17954f5BCA85748B" chain-id="1" />
+                        <style>
+                            .nft-art-gen-mint-progress {
+                                display: none;
+                            }
+                        </style>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-col gap-y-2">
+
+                    </div>
+                    <button id="rampp-minting-button-f075b598-c03b-4cd5-b3c4-a1ea03e0939e" class="hidden"
+                        data-styles="eyJvcGVuIjp7InRleHQiOm51bGwsInN0eWxlcyI6bnVsbH0sInBhdXNlZCI6eyJ0ZXh0IjpudWxsLCJzdHlsZXMiOm51bGx9LCJzdXBwbHlSZWFjaGVkIjp7InRleHQiOm51bGwsInN0eWxlcyI6bnVsbH0sImVycm9yIjp7InRleHQiOm51bGwsInN0eWxlcyI6bnVsbH0sImNsYWltVGV4dCI6eyJ0ZXh0IjpudWxsLCJzdHlsZXMiOm51bGx9LCJxdWFudGl0eSI6eyJ0ZXh0IjpudWxsLCJzdHlsZXMiOm51bGx9fQ=="
+                        data-abi-link="https://firebasestorage.googleapis.com/v0/b/nft-rampp.appspot.com/o/solidity_outputs%2FNbnj41uRbn1hn5tY0u7o%2FBlurbeanzContract_data-003ac6e4-1b0b-44f3-a739-da8fc02cebfe.json?alt=media"
+                        data-redirect="" data-contract-address="0x4a3F0F5eF06AdC5eAa4708D766A03C5d5E32B50d"
+                        data-show-claim-count="false" data-network="ethereum" data-format="multi" data-erc20-payments=""
+                        data-use-winter="false" data-custom-mode="true">null</button>
+
+                    <script type="text/javascript" src="https://mintplex.xyz/embeds/v2.1/embed.js"
+                        data-uuid="e2c7e7e5-51ef-4130-b811-fbdaa5bbb3ef"></script>
+                    <script type="text/javascript" src="https://mintplex.xyz/embeds/v2.1/embed.js"
+                        data-uuid="f075b598-c03b-4cd5-b3c4-a1ea03e0939e"></script>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Include the Metamask library -->
+<script src="https://cdn.jsdelivr.net/npm/@metamask/detect-provider"></script>
+
+<script>
+ 
+</script>
+
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
